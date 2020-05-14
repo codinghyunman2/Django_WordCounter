@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <div class="input_text">
+    <br>
+    <span class="input">입력 텍스트 : {{text}}</span>
+    <div class="result_output">
+      <span class="text">글자수 : {{total_len}}</span>
+      <span class="no_blank_text">공백제외 글자수 : {{no_blank_len}}</span>
+      <span class="word">단어수 : {{word_len}}</span>
+    </div>
+  </div>
+</body>
+</html>
